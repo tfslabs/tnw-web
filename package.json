@@ -1,0 +1,41 @@
+{
+  "name": "tnw-web",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "eslint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@babel/core": "^7",
+    "@carbon/charts-react": "^1.27",
+    "@carbon/icons-react": "^11.80",
+    "@carbon/pictograms": "^12.75",
+    "@carbon/pictograms-react": "^11.101",
+    "@carbon/react": "^1.107",
+    "@loadable/babel-plugin": "^5.16",
+    "@loadable/component": "^5.16",
+    "next": "^15",
+    "next-transpile-modules": "^10",
+    "prettier": "^3.8",
+    "prettier-config-carbon": "^0.12",
+    "react": "^18",
+    "react-copy-to-clipboard": "^5",
+    "react-dom": "^18",
+    "react-is": "^18",
+    "react-router-dom": "^7.15",
+    "regex": "^6",
+    "sass": "^1",
+    "webpack": "^5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6",
+    "eslint": "^9",
+    "eslint-config-next": "^15",
+    "sass": "^1",
+    "typescript": "^6",
+    "vite": "^8"
+  }
+}

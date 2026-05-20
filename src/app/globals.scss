@@ -1,0 +1,14 @@
+@use '@carbon/react';
+@use '@carbon/themes/scss/themes' as *;
+@use '@carbon/themes';
+
+/* system preference theme by default */
+:root {
+  @include themes.theme($g10);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include themes.theme($g100);
+  }
+}

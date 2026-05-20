@@ -1,0 +1,15 @@
+@use "@carbon/react" with ($use-flexbox-grid: true);
+
+// Global Seperator
+.section-margin {
+    margin-bottom: 10vh;
+}
+
+.subsection-margin {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.global-left-margin {
+    margin-right: 1rem;
+}
