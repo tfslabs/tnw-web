@@ -6,17 +6,18 @@
 export const msalConfig = {
     auth: {
         clientId: "b47a013f-895a-4aef-9f9c-24c69bb99828",
-        authority: "https://tnwb2c.ciamlogin.com/261e3b82-6c1a-4471-b17f-49061d1f14ee/",
+        authority: "https://261e3b82-6c1a-4471-b17f-49061d1f14ee.ciamlogin.com/261e3b82-6c1a-4471-b17f-49061d1f14ee",
         redirectUri: "/",
         navigateToLoginRequestUrl: true
     },
     cache: {
-        cacheLocation: "sessionStorage" // This configures where your cache will be stored
+        cacheLocation: "sessionStorage",
+        storeAuthStateInCookie: false
     },
     telemetry: {
         application: {
-            appName: "My Application",
-            appVersion: "1.0.0",
+            appName: "The Neko Workshop",
+            appVersion: "0.1.0",
         },
     }
 };
@@ -36,5 +37,5 @@ export const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const graphConfig = {
-    graphMeEndpoint: "https://graph.microsoft.com/v1.0/me" //e.g. https://graph.microsoft.com/v1.0/me
+    graphMeEndpoint: "https://graph.microsoft.com/v1.0/me"
 };

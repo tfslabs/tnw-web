@@ -15,12 +15,10 @@ export default function RootLayout(props) {
     <html lang="en">
       <body>
         <MsalProviderWrapper>
-          <div>
             <Header brandName="The Neko Workshop" productUsage="Home" />
             <Content>
               {props.children}
             </Content>
-          </div>
         </MsalProviderWrapper>
       </body>
     </html>
