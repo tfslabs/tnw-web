@@ -6,12 +6,18 @@
 export const msalConfig = {
     auth: {
         clientId: "b47a013f-895a-4aef-9f9c-24c69bb99828",
-        authority: "https://login.microsoftonline.com/261e3b82-6c1a-4471-b17f-49061d1f14ee",
-        redirectUri: "http://localhost:3000/"
+        authority: "https://tnwb2c.ciamlogin.com/261e3b82-6c1a-4471-b17f-49061d1f14ee/",
+        redirectUri: "/",
+        navigateToLoginRequestUrl: true
     },
     cache: {
-        cacheLocation: "sessionStorage", // This configures where your cache will be stored
-        storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+        cacheLocation: "sessionStorage" // This configures where your cache will be stored
+    },
+    telemetry: {
+        application: {
+            appName: "My Application",
+            appVersion: "1.0.0",
+        },
     }
 };
 
