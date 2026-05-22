@@ -6,7 +6,6 @@ import { useState } from "react";
 import { useMsal } from '@azure/msal-react';
 
 import { loginRequest } from '@/authConfig';
-import { TimestampParse } from '@/utils/TimestampParse';
 
 export function LoginDetail(props) {
     // Properties declaration
@@ -43,6 +42,7 @@ export function LoginDetail(props) {
     }
 
     const { instance, accounts } = useMsal();
+    const activeAccount = instance.getActiveAccount() || ((accounts.length > 0 && accounts[0] != null) ? accounts[0] : null);
 
     const NotLoggedIn = () => {
         const handleSignIn = () => {
@@ -50,7 +50,7 @@ export function LoginDetail(props) {
         }
 
         return (
-            <div className={rootClassName}>
+            <>
                 <Button
                     hasIconOnly={loginDetailBtnIconOnly}
                     iconDescription="Sign in"
@@ -59,20 +59,17 @@ export function LoginDetail(props) {
                     onClick={handleSignIn}>
                     Sign in
                 </Button>
-            </div>
+            </>
         );
     }
 
     const LoggedIn = () => {
         const handleLogoutRedirect = () => {
-            instance.logoutRedirect().catch((error) => console.log(error));
+            instance.logoutRedirect().catch((error) => console.log("Entra Error: \n" + error));
         };
 
-        const activeAccount = instance.getActiveAccount() || (accounts && accounts.length > 0 ? accounts[0] : null);
-        const claims = (activeAccount && activeAccount.idTokenClaims) ? activeAccount.idTokenClaims : {};
-
         return (
-            <div className={rootClassName}>
+            <>
                 <Button
                     hasIconOnly={loginDetailBtnIconOnly}
                     iconDescription="View ID"
@@ -91,22 +88,18 @@ export function LoginDetail(props) {
                     onRequestClose={closeModal}
                     onRequestSubmit={handleLogoutRedirect}
                 >
-                    <TextInput labelText="Name" defaultValue={claims.name} readOnly={true} />
-                    <TextInput labelText="User Principal Name" defaultValue={claims.preferred_username || claims.upn} readOnly={true} />
-                    <TextInput labelText="Email" defaultValue={claims.email} readOnly={true} />
-                    <TextInput labelText="Issue at" defaultValue={TimestampParse(claims.iat)} readOnly={true} />
-                    <TextInput labelText="Expire at" defaultValue={TimestampParse(claims.exp)} readOnly={true} />
-                    <TextInput labelText="IdP" defaultValue={idpFriendlyName + " " +  claims.ver} readOnly={true} />
-                    <TextInput labelText="Sign-in with" defaultValue={claims.idp} readOnly={true} />
+                    <TextInput labelText="Name" defaultValue={activeAccount?.name} readOnly={true} />
+                    <TextInput labelText="User Principal Name" defaultValue={activeAccount?.username} readOnly={true} />
+                    <TextInput labelText="Tenant ID" defaultValue={activeAccount?.tenantId} readOnly={true} />
+                    <TextInput labelText="IdP" defaultValue={idpFriendlyName} readOnly={true} />
                 </Modal>
-            </div>
+            </>
         );
     }
 
-    const activeAccount = instance.getActiveAccount() || (accounts && accounts.length > 0 ? accounts[0] : null);
-    const isAuthenticated = !!activeAccount;
-
     return (
-        isAuthenticated ? <LoggedIn /> : <NotLoggedIn />
+        <div className={rootClassName}>
+            {(activeAccount != null) ? <LoggedIn /> : <NotLoggedIn />}
+        </div>
     );
 }
