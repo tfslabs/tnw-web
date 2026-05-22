@@ -1,14 +1,8 @@
 'use client';
 
 import { Login } from "@carbon/icons-react";
-import { ComposedModal, ModalHeader, ModalBody, Button } from "@carbon/react";
+import { Modal, TextInput, Button } from "@carbon/react";
 import { useState } from "react";
-
-/*
-In OIDC, some claims that need to be displayed to let user understand more about their account in AAD B2C
-- iss (Issuer)
-- 
-*/
 
 export function LoginDetail(props) {
     // Properties declaration
@@ -39,20 +33,40 @@ export function LoginDetail(props) {
         setOpen(true);
     }
 
+    const NotLoggedIn = () => {
+        return (
+            <div className={rootClassName}>
+                <Button
+                    hasIconOnly={loginDetailBtnIconOnly}
+                    iconDescription="View ID"
+                    renderIcon={Login}
+                    kind={loginDetailBtnKind}
+                    onClick={openModal}>
+                    Sign in
+                </Button>
+            </div>
+        );
+    }
+
+    const LoggedIn = () => {
+        return (
+            <div className={rootClassName}>
+                <Button
+                    hasIconOnly={loginDetailBtnIconOnly}
+                    iconDescription="View ID"
+                    renderIcon={Login}
+                    kind={loginDetailBtnKind}
+                    onClick={openModal}>
+                    View ID
+                </Button>
+                <Modal aria-label="Modal content" modalHeading="Add a custom domain" passiveModal open={open} onRequestClose={closeModal}>
+                    <TextInput labelText="Tenant type" placeholder="Microsoft Entra External ID" disabled={true} readOnly={true} />
+                </Modal>
+            </div>
+        );
+    }
+
     return (
-        <div className={rootClassName}>
-            <Button 
-                hasIconOnly={loginDetailBtnIconOnly} 
-                iconDescription="Check your ID"
-                renderIcon={Login}
-                kind={loginDetailBtnKind}
-                onClick={openModal}>
-                Check your ID
-            </Button>
-            <ComposedModal open={open} onClose={closeModal}>
-                <ModalHeader title="You have been successfully signed out" />
-                <ModalBody />
-            </ComposedModal>    
-        </div>
+        <LoggedIn />
     );
 }

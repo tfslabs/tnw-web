@@ -1,4 +1,4 @@
-import { Button, Column } from "@carbon/react";
+import { Column } from "@carbon/react";
 
 import {
   CallToAction,
@@ -18,7 +18,6 @@ export default function Home() {
         ctaHeader="The Neko Workshop"
         ctaDescription="The Neko Workshop is a part of TheFlightSims Labs to validate software before publishing globally."
         rootClassName="section-margin">
-        <Button iconDescription="Join Discord" className="global-left-margin">Join Discord</Button>
         <LoginDetail loginDetailBtnIconOnly={false} loginDetailBtnKind="tertiary" rootClassName="global-left-margin" />
       </CallToAction>
 

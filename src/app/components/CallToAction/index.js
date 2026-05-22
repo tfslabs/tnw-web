@@ -1,5 +1,3 @@
-'use client';
-
 import { FlexGrid, Row } from "@carbon/react";
 
 import "./index.scss";
