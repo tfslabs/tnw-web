@@ -65,7 +65,7 @@ export function LoginDetail(props) {
 
     const LoggedIn = () => {
         const handleLogoutRedirect = () => {
-            instance.logoutRedirect().catch((error) => console.log("Entra Error: \n" + error));
+            instance.logoutRedirect().catch((error) => console.log(error));
         };
 
         return (
