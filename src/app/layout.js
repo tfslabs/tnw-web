@@ -28,7 +28,7 @@ export default function RootLayout(props) {
               <a href="/" className="footer-link-layout">The Neko Workshop</a>
             </li>
             <li className="footer-item-layout">
-              <a href="https://discord.gg/GMUdznKjv" className="footer-link-layout">Join Discord</a>
+              <a href="https://discord.gg/R8s2HAezrC" className="footer-link-layout">Join Discord</a>
             </li>
           </Footer>
         </MsalProviderWrapper>

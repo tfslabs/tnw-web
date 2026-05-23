@@ -36,7 +36,7 @@ export default function Home() {
             cardDescription="Learn Cyber Security for free"
             btnTextDescription="Join Discord"
             btnKind="primary"
-            btnHref="https://discord.gg/GMUdznKjv" />
+            btnHref="https://discord.gg/R8s2HAezrC" />
         </Column>
         <Column>
           <SingleCardNoImage
@@ -44,7 +44,7 @@ export default function Home() {
             cardDescription="Get support on Discord"
             btnTextDescription="Join Discord"
             btnKind="primary"
-            btnHref="https://discord.gg/GMUdznKjv" />
+            btnHref="https://discord.gg/R8s2HAezrC" />
         </Column>
       </CardGroup>
 
