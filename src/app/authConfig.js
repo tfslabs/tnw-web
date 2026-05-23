@@ -1,5 +1,3 @@
-'use server';
-
 /**
  * Configuration object to be passed to MSAL instance on creation. 
  * For a full list of MSAL.js configuration parameters, visit:
@@ -7,8 +5,8 @@
  */
 export const msalConfig = {
     auth: {
-        clientId: process.env.clientId,
-        authority: process.env.authority,
+        clientId: "b47a013f-895a-4aef-9f9c-24c69bb99828",
+        authority: "https://261e3b82-6c1a-4471-b17f-49061d1f14ee.ciamlogin.com/261e3b82-6c1a-4471-b17f-49061d1f14ee",
         redirectUri: "/",
         navigateToLoginRequestUrl: true
     },
