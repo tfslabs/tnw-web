@@ -79,14 +79,14 @@ export function LoginDetail(props) {
                     View ID
                 </Button>
                 <Modal
-                        danger={true}
-                        aria-label="Modal content"
-                        modalHeading="User claims"
-                        primaryButtonText="Log out"
-                        secondaryButtonText="Close Diaglog"
-                        open={open}
-                        onRequestClose={closeModal}
-                        onRequestSubmit={handleLogoutRedirect}>
+                    danger={true}
+                    aria-label="Modal content"
+                    modalHeading="User claims"
+                    primaryButtonText="Log out"
+                    secondaryButtonText="Close Diaglog"
+                    open={open}
+                    onRequestClose={closeModal}
+                    onRequestSubmit={handleLogoutRedirect}>
                     <TextInput labelText="Name" defaultValue={activeAccount?.name} readOnly={true} />
                     <TextInput labelText="User Principal Name" defaultValue={activeAccount?.username} readOnly={true} />
                     <TextInput labelText="Tenant ID" defaultValue={activeAccount?.tenantId} readOnly={true} />
