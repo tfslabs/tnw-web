@@ -1,5 +1,7 @@
 # The Neko Workshop website
 
+<img width="1548" height="844" alt="image" src="https://github.com/user-attachments/assets/5e84e939-9858-45de-8292-380063e6d761" />
+
 ## Getting Started
 
 First, run the development server:
@@ -10,7 +12,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-In case of building production system, run this command
+In case of building a production system, run this command
 
 ```bash
 yarn build && yarn start
@@ -18,7 +20,7 @@ yarn build && yarn start
 
 ## Learn More
 
-This project uses Next.js framework & IBM Carbon Design System.
+This project uses the Next.js framework & IBM Carbon Design System.
 
 For further info about the development, see the docs:
 
