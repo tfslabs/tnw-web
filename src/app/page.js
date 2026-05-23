@@ -24,8 +24,8 @@ export default function Home() {
       <CardGroup cardGroupHeader="What we offer" rootClassName="section-margin" subClassName="subsection-margin">
         <Column>
           <SingleCardNoImage
-            cardHeader="Web Mail Service"
-            cardDescription="Free mail service, powered by Mailu"
+            cardHeader="Web-based email service"
+            cardDescription="Free web mail service, powered by Mailu"
             btnTextDescription="Access web mail"
             btnKind="primary"
             btnHref="https://webmail.tnw.io.vn/webmail" />
