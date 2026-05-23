@@ -24,7 +24,6 @@
     "prettier": "^3.8",
     "prettier-config-carbon": "^0.12",
     "react": "^18",
-    "react-copy-to-clipboard": "^5",
     "react-dom": "^18",
     "react-is": "^18",
     "react-router-dom": "^7.15",
