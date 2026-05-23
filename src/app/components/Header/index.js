@@ -1,10 +1,14 @@
-import { Header as CarbonHeader, HeaderName, HeaderGlobalBar, SkipToContent } from '@carbon/react';
-
-import { LoginDetail } from "../LoginDetail";
+import { 
+    Header as CarbonHeader, 
+    HeaderName, 
+    HeaderGlobalBar, 
+    SkipToContent 
+} from '@carbon/react';
 
 export function Header(props) {
     let brandName = props.brandName || "IBM";
     let productUsage = props.productUsage || "Quantum";
+    let headerCTAcontents = props.children || (<></>);
 
     return (
         <>
@@ -12,10 +16,7 @@ export function Header(props) {
                 <SkipToContent />
                 <HeaderName href="#" prefix={brandName}>| {productUsage}</HeaderName>
                 <HeaderGlobalBar>
-                    <LoginDetail
-                        loginDetailBtnIconOnly={true}
-                        loginDetailBtnKind="primary"
-                    />
+                    {headerCTAcontents}
                 </HeaderGlobalBar>
             </CarbonHeader>
         </>

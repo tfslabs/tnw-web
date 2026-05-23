@@ -3,7 +3,7 @@ import { FlexGrid, Row, Column, Theme, OrderedList, Link } from "@carbon/react";
 import "./index.scss";
 
 export function Footer(props) {
-    let brandName = props.brandName || "IBM";
+    let footerContent = props.children || (<></>);
 
     return (
         <>
@@ -13,11 +13,7 @@ export function Footer(props) {
                         <Row>
                             <Column>
                                 <OrderedList>
-                                    <li className="footer-item-layout">
-                                        <a href="/" className="footer-link-layout">{brandName}</a>
-                                    </li>
-                                    <li className="footer-item-layout">
-                                        <a href="https://discord.gg/GMUdznKjv" className="footer-link-layout">Join Discord</a></li>
+                                    {footerContent}
                                 </OrderedList>
                             </Column>
                         </Row>

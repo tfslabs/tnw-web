@@ -2,7 +2,7 @@ import "@/globals.scss";
 
 import React from 'react';
 import { Content } from "@carbon/react";
-import { Header, Footer } from "@/components"
+import { Header, Footer, LoginDetail } from "@/components"
 import MsalProviderWrapper from '@/MsalProviderWrapper';
 
 export const metadata = {
@@ -15,11 +15,22 @@ export default function RootLayout(props) {
     <html lang="en">
       <body>
         <MsalProviderWrapper>
-            <Header brandName="The Neko Workshop" productUsage="Home" />
-            <Content>
-              {props.children}
-            </Content>
-            <Footer brandName="The Neko Workshop" />
+          <Header brandName="The Neko Workshop" productUsage="Home"> 
+            <LoginDetail loginDetailBtnIconOnly={true} loginDetailBtnKind="primary" />
+          </Header>
+
+          <Content>
+            {props.children}
+          </Content>
+          
+          <Footer>
+            <li className="footer-item-layout">
+              <a href="/" className="footer-link-layout">The Neko Workshop</a>
+            </li>
+            <li className="footer-item-layout">
+              <a href="https://discord.gg/GMUdznKjv" className="footer-link-layout">Join Discord</a>
+            </li>
+          </Footer>
         </MsalProviderWrapper>
       </body>
     </html>

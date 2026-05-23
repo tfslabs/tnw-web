@@ -12,7 +12,7 @@ export function LoginDetail(props) {
     let rootClassName = props.rootClassName || "";
     let loginDetailBtnIconOnly = props.loginDetailBtnIconOnly || false;
     let loginDetailBtnKind = props.loginDetailBtnKind || "primary";
-    let idpFriendlyName = props.idpFriendlyName || "Legacy OIDC IdP";
+    let idpFriendlyName = props.idpFriendlyName || "Microsoft Entra External ID";
 
     // States for modal
     const [open, setOpen] = useState(false);
