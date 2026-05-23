@@ -16,7 +16,7 @@ export function CallToAction(props) {
                     <h1>{ctaHeader}</h1>
                 </Row>
                 <Row className="cta-row-margin">
-                    <h4>{ctaDescription}</h4>
+                    <p>{ctaDescription}</p>
                 </Row>
                 <Row className="cta-row-margin">
                     {ctaContent}
