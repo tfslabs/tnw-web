@@ -17,6 +17,7 @@ node_modules
 .gitignore
 
 # Docker platform
+.docker
 .dockerignore
 
 # Unncessary documents
