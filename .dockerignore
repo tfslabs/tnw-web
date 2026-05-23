@@ -1,0 +1,24 @@
+# NextJS build
+.next
+
+# Generic NodeJS
+node_modules
+
+# System trashbag
+*.DS_Store
+
+# Personal workspace
+.vs
+.vscode
+
+# Git & platforms
+.git
+.gitlab
+.gitignore
+
+# Docker platform
+.dockerignore
+
+# Unncessary documents
+README.md
+LICENSE
