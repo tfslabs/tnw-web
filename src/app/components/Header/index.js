@@ -1,18 +1,10 @@
 import { Header as CarbonHeader, HeaderName, HeaderGlobalBar, SkipToContent } from '@carbon/react';
 
-import {LoginDetail} from "../LoginDetail";
+import { LoginDetail } from "../LoginDetail";
 
 export function Header(props) {
-    let brandName = props.brandName;
-    let productUsage = props.productUsage;
-    
-    if (brandName == null) {
-        brandName = "IBM";
-    }
-
-    if (productUsage == null) {
-        productUsage = "Quantum";
-    }
+    let brandName = props.brandName || "IBM";
+    let productUsage = props.productUsage || "Quantum";
 
     return (
         <>

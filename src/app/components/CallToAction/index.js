@@ -4,30 +4,10 @@ import "./index.scss";
 
 export function CallToAction(props) {
     // Properties declaration
-    let rootClassName = props.rootClassName;
-    let ctaHeader = props.ctaHeader;
-    let ctaDescription = props.ctaDescription;
-    let ctaContent = props.children;
-
-    // Properties finallization
-    if (rootClassName == null) {
-        rootClassName = "";
-    }
-
-    if (ctaHeader == null) {
-        ctaHeader = "CTA Header";
-    }
-
-    if (ctaDescription == null) {
-        ctaDescription = "CTA Description"
-    }
-
-    if (ctaContent == null) {
-        ctaContent = () => {
-            <>
-            </>
-        };
-    }
+    let rootClassName = props.rootClassName || "";
+    let ctaHeader = props.ctaHeader || "CTA Header";
+    let ctaDescription = props.ctaDescription || "CTA Description";
+    let ctaContent = props.children || (<></>);
 
     return (
         <div className={rootClassName}>

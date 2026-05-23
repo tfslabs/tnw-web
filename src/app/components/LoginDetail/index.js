@@ -9,28 +9,12 @@ import { loginRequest } from '@/authConfig';
 
 export function LoginDetail(props) {
     // Properties declaration
-    let rootClassName = props.rootClassName;
-    let loginDetailBtnIconOnly = props.loginDetailBtnIconOnly;
-    let loginDetailBtnKind = props.loginDetailBtnKind;
-    let idpFriendlyName = props.idpFriendlyName;
+    let rootClassName = props.rootClassName || "";
+    let loginDetailBtnIconOnly = props.loginDetailBtnIconOnly || false;
+    let loginDetailBtnKind = props.loginDetailBtnKind || "primary";
+    let idpFriendlyName = props.idpFriendlyName || "Legacy OIDC IdP";
 
-    // Properties finallization
-    if (rootClassName == null) {
-        rootClassName = "";
-    }
-
-    if (loginDetailBtnIconOnly == null) {
-        loginDetailBtnIconOnly = false;
-    }
-
-    if (loginDetailBtnKind == null) {
-        loginDetailBtnKind = "primary";
-    }
-
-    if (idpFriendlyName == null) {
-        idpFriendlyName = "Microsoft Entra External ID";
-    }
-
+    // States for modal
     const [open, setOpen] = useState(false);
 
     const closeModal = () => {

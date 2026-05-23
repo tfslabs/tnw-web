@@ -2,25 +2,9 @@ import "./index.scss";
 
 export function SingleCardWithBg(props) {
     // Properties declaration
-    let rootClassName = props.rootClassName;
-    let bgImageUrl = props.bgImageUrl;
-    let singleCardWithBgContent = props.children;
-
-    // Properties finallization
-    if (rootClassName == null) {
-        rootClassName = "";
-    }
-
-    if (bgImageUrl == null) {
-        bgImageUrl = "";
-    }
-
-    if (singleCardWithBgContent == null) {
-        singleCardWithBgContent = () => {
-            <>
-            </>
-        };
-    }
+    let rootClassName = props.rootClassName || "";
+    let bgImageUrl = props.bgImageUrl || "";
+    let singleCardWithBgContent = props.children || (<></>);
 
     return (
         <div className={rootClassName}>

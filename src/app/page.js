@@ -1,5 +1,4 @@
-import { Column } from "@carbon/react";
-
+import { Column, Theme, useTheme } from "@carbon/react";
 import {
   CallToAction,
   CardGroup,
@@ -12,6 +11,7 @@ import {
 import "./page.scss";
 
 export default function Home() {
+
   return (
     <>
       <CallToAction
@@ -40,31 +40,35 @@ export default function Home() {
         </Column>
         <Column>
           <SingleCardNoImage
-            cardHeader="Canva Education"
-            cardDescription="Design for free on Canva.com"
-            btnTextDescription="Sign in to Canva"
+            cardHeader="Already a customer?"
+            cardDescription="Get support on Discord"
+            btnTextDescription="Join Discord"
             btnKind="primary"
-            btnHref="https://www.canva.com/login/sso/9729ad1a-2d8a-44ba-95d6-5382c576a89a" />
+            btnHref="https://discord.gg/GMUdznKjv" />
         </Column>
       </CardGroup>
 
-      <SingleCardWithImage rootClassName="section-margin" singleCardImageUrl='/smart-work.jpg'>
+      <SingleCardWithImage rootClassName="section-margin" singleCardImageUrl='/design-with-canva.jpg'>
         <SingleCardNoImage
-          cardHeader="Interested in Cryptocurrency?"
-          cardDescription="Try The Neko Workshop Crypto on BNB testnet"
-          btnTextDescription="View TNWCY"
+          isExperimentTag={true}
+          txtExperimentTag="Testing application"
+          cardHeader="Wanna try Canva Pro for free?"
+          cardDescription="Free Canva Pro for B2C customers"
+          btnTextDescription="Sign into Canva.com"
           btnKind="primary"
-          btnHref="https://testnet.bscscan.com/token/0xafe416240f5dfa22ab5b2ce19d17bcfe88d83300" />
+          btnHref="https://www.canva.com/login/sso/82b2e432-b51e-45ca-979c-b9954c3027b9" />
       </SingleCardWithImage>
 
-      <SingleCardWithBg rootClassName="section-margin" bgImageUrl="/singleNc.jpg">
-        <SingleCardNoImage
-          cardHeader="Already a customer in B2B tenant?"
-          cardDescription="View your assigned application in TNW My App"
-          btnTextDescription="View your apps"
-          btnKind="primary"
-          btnHref="https://myapps.microsoft.com/tnw.io.vn" />
-      </SingleCardWithBg>
+      <Theme theme="g100">
+        <SingleCardWithBg rootClassName="section-margin">
+          <SingleCardNoImage
+            cardHeader="Interested in Cryptocurrency?"
+            cardDescription="Try The Neko Workshop Crypto on BNB testnet"
+            btnTextDescription="View TNWCY"
+            btnKind="primary"
+            btnHref="https://testnet.bscscan.com/token/0xafe416240f5dfa22ab5b2ce19d17bcfe88d83300" />
+        </SingleCardWithBg>
+      </Theme>
     </>
   );
 }

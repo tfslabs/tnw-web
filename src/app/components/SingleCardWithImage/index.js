@@ -4,25 +4,9 @@ import "./index.scss";
 
 export function SingleCardWithImage(props) {
     // Properties declaration
-    let rootClassName = props.rootClassName;
-    let singleCardContent = props.children;
-    let singleCardImageUrl = props.singleCardImageUrl;
-
-    // Properties finallization
-    if (rootClassName == null) {
-        rootClassName = "";
-    }
-
-    if (singleCardContent == null) {
-        singleCardContent = () => {
-            <>
-            </>
-        }
-    }
-
-    if (singleCardImageUrl == null) {
-        singleCardImageUrl = '';
-    }
+    let rootClassName = props.rootClassName || "";
+    let singleCardContent = props.children || (<></>);
+    let singleCardImageUrl = props.singleCardImageUrl || "";
 
     return (
         <div className={rootClassName}>
@@ -32,14 +16,7 @@ export function SingleCardWithImage(props) {
                         {singleCardContent}
                     </Column>
                     <Column>
-                        <div 
-                            className="newservice-background" 
-                            style={
-                                {
-                                    backgroundImage: `url("${singleCardImageUrl}")`
-                                }
-                            }
-                        />
+                        <div className="newservice-background" style={{ backgroundImage: `url("${singleCardImageUrl}")` }} />
                     </Column>
                 </Row>
             </FlexGrid>

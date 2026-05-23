@@ -1,47 +1,41 @@
 "use client";
 
-import { FlexGrid, Row, Column, Button } from "@carbon/react";
+import { FlexGrid, Row, Column, Button, OperationalTag } from "@carbon/react";
 import { ArrowRight } from "@carbon/icons-react";
 
 import "./index.scss";
 
 export function SingleCardNoImage(props) {
     // Properties declaration
-    let rootClassName = props.rootClassName;
-    let cardHeader = props.cardHeader;
-    let cardDescription = props.cardDescription;
-    let btnTextDescription = props.btnTextDescription;
-    let btnHref = props.btnHref;
-    let btnKind = props.btnKind;
+    let rootClassName = props.rootClassName || "";
+    let cardHeader = props.cardHeader || "This is card header";
+    let cardDescription = props.cardDescription || "This is card description";
+    let btnTextDescription = props.btnTextDescription || "This is a button";
+    let btnHref = props.btnHref || "";
+    let btnKind = props.btnKind || "primary";
+    let isExperimentTag = props.isExperimentTag || false;
+    let txtExperimentTag = props.txtExperimentTag || "Experiment feature";
 
-    // Properties finallization
-    if (rootClassName == null) {
-        rootClassName = "";
-    }
-
-    if (cardHeader == null) {
-        cardHeader = "This is card header";
-    }
-
-    if (cardDescription == null) {
-        cardDescription = "This is card description";
-    }
-
-    if (btnTextDescription == null) {
-        btnTextDescription = "This is a button";
-    }
-
-    if (btnHref == null) {
-        btnHref = "";
-    }
-
-    if (btnKind == null) {
-        btnKind = "primary";
+    const ExperimentTag = () => {
+        return (
+            <>
+                <Row className="highlight-detail-margin-seperation">
+                    <Column>
+                        <div>
+                            <OperationalTag size="md" text={txtExperimentTag} type="red" />
+                        </div>
+                    </Column>
+                </Row>
+            </>
+        )
     }
 
     return (
         <div className={rootClassName}>
             <FlexGrid>
+                {
+                    (isExperimentTag == true) ? <ExperimentTag /> : <></>
+                }
                 <Row className="highlight-detail-margin-seperation">
                     <Column>
                         <div>
