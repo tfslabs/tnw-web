@@ -21,7 +21,7 @@
     "@carbon/react": "^1.107",
     "@loadable/babel-plugin": "^5.16",
     "@loadable/component": "^5.16",
-    "next": "^15",
+    "next": "^16",
     "next-transpile-modules": "^10",
     "prettier": "^3.8",
     "prettier-config-carbon": "^0.12",
