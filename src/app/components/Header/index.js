@@ -14,7 +14,7 @@ export function Header(props) {
         <>
             <CarbonHeader aria-label="Website Header">
                 <SkipToContent />
-                <HeaderName href="#" prefix={brandName}>| {productUsage}</HeaderName>
+                <HeaderName href="/" prefix={brandName}>| {productUsage}</HeaderName>
                 <HeaderGlobalBar>
                     {headerCTAcontents}
                 </HeaderGlobalBar>

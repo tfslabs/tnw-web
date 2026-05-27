@@ -5,7 +5,7 @@ import { Modal, TextInput, Button } from "@carbon/react";
 import { useState } from "react";
 import { useMsal } from '@azure/msal-react';
 
-import { loginRequest } from '@/authConfig';
+import { loginRequest } from '@/config/authConfig';
 
 export function LoginDetail(props) {
     // Properties declaration

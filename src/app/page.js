@@ -1,4 +1,4 @@
-import { Column, Theme, useTheme } from "@carbon/react";
+import { Column, Theme } from "@carbon/react";
 import {
   CallToAction,
   CardGroup,
