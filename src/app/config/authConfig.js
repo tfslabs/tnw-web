@@ -1,3 +1,6 @@
+
+export const externalDomain = "tnwb2c.onmicrosoft.com"
+
 /**
  * Configuration object to be passed to MSAL instance on creation. 
  * For a full list of MSAL.js configuration parameters, visit:

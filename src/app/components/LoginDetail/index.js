@@ -5,7 +5,7 @@ import { Modal, TextInput, Button } from "@carbon/react";
 import { useState } from "react";
 import { useMsal } from '@azure/msal-react';
 
-import { loginRequest } from '@/config/authConfig';
+import { loginRequest, externalDomain } from '@/config/authConfig';
 
 export function LoginDetail(props) {
     // Properties declaration
@@ -26,6 +26,7 @@ export function LoginDetail(props) {
     }
 
     const { instance, accounts } = useMsal();
+
     const activeAccount = instance.getActiveAccount() || ((accounts.length > 0 && accounts[0] != null) ? accounts[0] : null);
 
     const NotLoggedIn = () => {
@@ -72,8 +73,8 @@ export function LoginDetail(props) {
                     onRequestClose={closeModal}
                     onRequestSubmit={handleLogoutRedirect}>
                     <TextInput labelText="Name" defaultValue={activeAccount?.name} readOnly={true} />
-                    <TextInput labelText="User Principal Name" defaultValue={activeAccount?.username} readOnly={true} />
-                    <TextInput labelText="Tenant ID" defaultValue={activeAccount?.tenantId} readOnly={true} />
+                    <TextInput labelText="User Principal Name" defaultValue={activeAccount?.localAccountId + "@" + externalDomain} readOnly={true} />
+                    <TextInput labelText="Tenant Domain" defaultValue={activeAccount?.environment} readOnly={true} />
                     <TextInput labelText="IdP" defaultValue={idpFriendlyName} readOnly={true} />
                 </Modal>
             </>
