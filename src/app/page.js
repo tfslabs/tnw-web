@@ -1,11 +1,10 @@
-import { Column, Theme } from "@carbon/react";
+import { Column } from "@carbon/react";
 import {
   CallToAction,
   CardGroup,
   LoginDetail,
   SingleCardNoImage,
-  SingleCardWithBg,
-  SingleCardWithImage
+  SingleCardWithLargeImage
 } from "@/components";
 
 import "./page.scss";
@@ -48,7 +47,7 @@ export default function Home() {
         </Column>
       </CardGroup>
 
-      <SingleCardWithImage rootClassName="section-margin" singleCardImageUrl='/design-with-canva.jpg'>
+      <SingleCardWithLargeImage rootClassName="section-margin" singleCardImageUrl='/design-with-canva.jpg'>
         <SingleCardNoImage
           isExperimentTag={true}
           txtExperimentTag="Testing application"
@@ -57,18 +56,7 @@ export default function Home() {
           btnTextDescription="Sign into Canva.com"
           btnKind="primary"
           btnHref="https://www.canva.com/login/sso/82b2e432-b51e-45ca-979c-b9954c3027b9" />
-      </SingleCardWithImage>
-
-      <Theme theme="g100">
-        <SingleCardWithBg rootClassName="section-margin">
-          <SingleCardNoImage
-            cardHeader="Interested in Cryptocurrency?"
-            cardDescription="Try The Neko Workshop Crypto on BNB testnet"
-            btnTextDescription="View TNWCY"
-            btnKind="primary"
-            btnHref="https://testnet.bscscan.com/token/0xafe416240f5dfa22ab5b2ce19d17bcfe88d83300" />
-        </SingleCardWithBg>
-      </Theme>
+      </SingleCardWithLargeImage>
     </>
   );
 }

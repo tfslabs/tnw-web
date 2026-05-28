@@ -6,4 +6,4 @@ export * from "./LoginDetail";
 export * from "./MsalProviderWrapper";
 export * from "./SingleCardNoImage";
 export * from "./SingleCardWithBg";
-export * from "./SingleCardWithImage";
+export * from "./SingleCardWithLargeImage";

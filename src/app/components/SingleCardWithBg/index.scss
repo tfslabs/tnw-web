@@ -1,5 +1,6 @@
 .singlenewcomer-style {
-    
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
