@@ -3,7 +3,7 @@
 import React from 'react';
 import { MsalProvider } from '@azure/msal-react';
 import { PublicClientApplication, EventType } from '@azure/msal-browser';
-import { msalConfig } from '@/authConfig';
+import { msalConfig } from '@/config/authConfig';
 
 // MSAL should be instantiated once to avoid re-instantiation on re-renders
 const msalInstance = new PublicClientApplication(msalConfig);
@@ -16,7 +16,7 @@ msalInstance.addEventCallback((event) => {
     }
 });
 
-export default function MsalProviderWrapper({ children }) {
+export function MsalProviderWrapper({ children }) {
     return (
         <MsalProvider instance={msalInstance}>
             {children}
