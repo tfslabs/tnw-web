@@ -3,6 +3,7 @@ export * from "./CardGroup";
 export * from "./Footer";
 export * from "./Header";
 export * from "./LoginDetail";
+export * from "./MsalProviderWrapper";
 export * from "./SingleCardNoImage";
 export * from "./SingleCardWithBg";
-export * from "./SingleCardWithImage";
+export * from "./SingleCardWithLargeImage";

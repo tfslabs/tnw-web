@@ -2,7 +2,7 @@ import { FlexGrid, Row, Column } from '@carbon/react';
 
 import "./index.scss";
 
-export function SingleCardWithImage(props) {
+export function SingleCardWithLargeImage(props) {
     // Properties declaration
     let rootClassName = props.rootClassName || "";
     let singleCardContent = props.children || (<></>);
