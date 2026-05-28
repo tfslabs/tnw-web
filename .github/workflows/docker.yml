@@ -37,6 +37,7 @@ jobs:
               with:
                   username: ${{ secrets.DOCKERHUB_USERNAME }}
                   password: ${{ secrets.DOCKERHUB_TOKEN }}
+              if: github.ref == 'refs/heads/master'
 
             - name: Build and push multi-arch image (On-push to Docker)
               uses: docker/build-push-action@263435318d21b8e681c14492fe198d362a7d2c83
@@ -46,5 +47,5 @@ jobs:
                   platforms: linux/amd64
                   push: true
                   tags: |
-                      anhvlttfs/tnw-web:latest
+                      theflightsims/tnw-web:latest
               if: github.ref == 'refs/heads/master'
