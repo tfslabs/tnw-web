@@ -46,5 +46,5 @@ jobs:
                   platforms: linux/amd64
                   push: true
                   tags: |
-                      anhvlttfs/tnw-web:latest
+                      theflightsims/tnw-web:latest
               if: github.ref == 'refs/heads/master'
