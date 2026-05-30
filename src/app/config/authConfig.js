@@ -20,7 +20,7 @@ export const msalConfig = {
     telemetry: {
         application: {
             appName: "The Neko Workshop",
-            appVersion: "0.1.0",
+            appVersion: "0.1.2",
         },
     }
 };

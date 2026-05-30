@@ -73,7 +73,7 @@ export function LoginDetail(props) {
                     onRequestClose={closeModal}
                     onRequestSubmit={handleLogoutRedirect}>
                     <TextInput labelText="Name" defaultValue={activeAccount?.name} readOnly={true} />
-                    <TextInput labelText="User Principal Name" defaultValue={activeAccount?.localAccountId + "@" + externalDomain} readOnly={true} />
+                    <TextInput labelText={`User ID (can combine with "@${externalDomain}")`} defaultValue={activeAccount?.localAccountId} readOnly={true} />
                     <TextInput labelText="Tenant Domain" defaultValue={activeAccount?.environment} readOnly={true} />
                     <TextInput labelText="IdP" defaultValue={idpFriendlyName} readOnly={true} />
                 </Modal>
