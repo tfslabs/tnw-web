@@ -1,8 +1,8 @@
 {
   "name": "tnw-web",
   "version": "0.2.0",
-  "description": "The Neko Workshop primary website, build with Next.JS + IBM Carbon Design System",
   "private": true,
+  "description": "The Neko Workshop primary website, build with Next.JS + IBM Carbon Design System",
   "license": "UNLICENSED",
   "scripts": {
     "build": "next build",
@@ -28,13 +28,11 @@
     "react": "^19",
     "react-dom": "^19",
     "react-is": "^19",
-    "react-router-dom": "^7.15",
     "regex": "^6",
     "sass": "^1",
     "webpack": "^5"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6",
     "eslint": "^9",
     "eslint-config-next": "^15",
     "sass": "^1",
