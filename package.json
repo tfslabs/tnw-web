@@ -33,7 +33,6 @@
     "webpack": "^5"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6",
     "eslint": "^9",
     "eslint-config-next": "^15",
     "sass": "^1",
