@@ -28,7 +28,6 @@
     "react": "^19",
     "react-dom": "^19",
     "react-is": "^19",
-    "react-router-dom": "^7.15",
     "regex": "^6",
     "sass": "^1",
     "webpack": "^5"
