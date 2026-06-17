@@ -265,10 +265,10 @@
     "@ibm/telemetry-js" "^1.5.0"
     prop-types "^15.8.1"
 
-"@carbon/pictograms@^12.75":
-  version "12.77.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.77.0.tgz#40fde6afdcff66161ae4063c7b9699aca022346a"
-  integrity sha512-PTMGzpvX3hHcSEz4SUglQdwS2WYCEPKtgjW/cO7f5AG2qw045Ww92/Hs14NtElLRei8h1i7SJg7OQWloX4pWBg==
+"@carbon/pictograms@^12.78":
+  version "12.78.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.78.0.tgz#3f7c62a82106682857bb816577e358574f62f972"
+  integrity sha512-zKxOjgFDe0mN4b5XuH2WVkryHGT24ZsUQeEpQZbwAcgROnTFEkdyCQHoEQl8e/mI/FGIXK5z4rXLtkqU1xhNjA==
   dependencies:
     "@ibm/telemetry-js" "^1.5.0"
 
@@ -1577,13 +1577,6 @@
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.12.2.tgz#72da0da48d72b1e87831b9c0308931d3f4669027"
   integrity sha512-nAB74NfSNKknqQ1RrYj6uz8FcXEomu/MATJZxh/x+BArzN2U3JbOYC0APYzUIGhVY3m5hRxA8VPNdPBoG8txlA==
-
-"@vitejs/plugin-react@^6":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-6.0.2.tgz#f70cb8ed0ce225dbc3055d78070f820d8aa35eda"
-  integrity sha512-DlSMqo4WhThw4vB8Mpn0Woe9J+Jfq1geJ61AKW0QEgLzGMNwtIMdxbDUzLxcun8W7NbJO0e2Jg/Nxm3cCSVzzg==
-  dependencies:
-    "@rolldown/pluginutils" "^1.0.0"
 
 "@webassemblyjs/ast@1.14.1", "@webassemblyjs/ast@^1.14.1":
   version "1.14.1"

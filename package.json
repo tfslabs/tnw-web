@@ -16,7 +16,7 @@
     "@babel/core": "^7",
     "@carbon/charts-react": "^1.27",
     "@carbon/icons-react": "^11.82",
-    "@carbon/pictograms": "^12.75",
+    "@carbon/pictograms": "^12.78",
     "@carbon/pictograms-react": "^11.101",
     "@carbon/react": "^1.107",
     "@loadable/babel-plugin": "^5.16",
