@@ -3,16 +3,16 @@
 
 
 "@azure/msal-browser@^5":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-5.11.0.tgz#02cf20824a4a1815abb50ef88d891087b73009c7"
-  integrity sha512-zkGNYS3TwY8lUpPIafAmsFCYZbgFixY9y/LZB9GUg0IILoHTqpN26j5OrkL1AQThh/YdZsawe4iWXfp85lFVxg==
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-5.14.0.tgz#3c68c22b239f6c40fab08f433221f1b587abd8a5"
+  integrity sha512-Dfl7hPZe9/JJwRhFFXHq2z1oHYBuGubmff3kWXOsd1AGgyXlqjNYAWuN/1JL/ZrcZBs8TKMjGSil6Rcc7E8VPQ==
   dependencies:
-    "@azure/msal-common" "16.6.2"
+    "@azure/msal-common" "16.9.0"
 
-"@azure/msal-common@16.6.2":
-  version "16.6.2"
-  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-16.6.2.tgz#4aa791db2c4f37f503bfe10f5aec76fd552daf8e"
-  integrity sha512-hQjjsekAjB00cM1EmatWJlzhEoK2Qhz7Rj5gvM6tYf8iL7RM3tkxlpU9fG0+ofkulzg9AEEA6dIEnSmDr5ZqUA==
+"@azure/msal-common@16.9.0":
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-16.9.0.tgz#0222b099615ebc70bc61892ee1232341c086fcc6"
+  integrity sha512-1MWGjqgUCRAYgLmVFZKp7fs3Rg1TFvIMgywY8ze2olNVvLlJoRThuoziWSDJuwwyJI5L4rnLb9Tyt5D9GvSLPw==
 
 "@azure/msal-react@^5":
   version "5.4.2"
@@ -1577,13 +1577,6 @@
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/@unrs/resolver-binding-win32-x64-msvc/-/resolver-binding-win32-x64-msvc-1.12.2.tgz#72da0da48d72b1e87831b9c0308931d3f4669027"
   integrity sha512-nAB74NfSNKknqQ1RrYj6uz8FcXEomu/MATJZxh/x+BArzN2U3JbOYC0APYzUIGhVY3m5hRxA8VPNdPBoG8txlA==
-
-"@vitejs/plugin-react@^6":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-6.0.2.tgz#f70cb8ed0ce225dbc3055d78070f820d8aa35eda"
-  integrity sha512-DlSMqo4WhThw4vB8Mpn0Woe9J+Jfq1geJ61AKW0QEgLzGMNwtIMdxbDUzLxcun8W7NbJO0e2Jg/Nxm3cCSVzzg==
-  dependencies:
-    "@rolldown/pluginutils" "^1.0.0"
 
 "@webassemblyjs/ast@1.14.1", "@webassemblyjs/ast@^1.14.1":
   version "1.14.1"
