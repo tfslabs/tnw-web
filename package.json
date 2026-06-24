@@ -1,6 +1,6 @@
 {
   "name": "tnw-web",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "description": "The Neko Workshop primary website, build with Next.JS + IBM Carbon Design System",
   "license": "UNLICENSED",

@@ -1,4 +1,4 @@
-import "@/layout.scss";
+import "@/app/layout.scss";
 
 import React from 'react';
 import { Content } from "@carbon/react";
