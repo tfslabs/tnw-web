@@ -3,16 +3,16 @@
 
 
 "@azure/msal-browser@^5":
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-5.14.0.tgz#3c68c22b239f6c40fab08f433221f1b587abd8a5"
-  integrity sha512-Dfl7hPZe9/JJwRhFFXHq2z1oHYBuGubmff3kWXOsd1AGgyXlqjNYAWuN/1JL/ZrcZBs8TKMjGSil6Rcc7E8VPQ==
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-5.15.0.tgz#bf949eafa6fb8c638df32d4ac4daaafcef4139d8"
+  integrity sha512-2NYT6v+eeQn8kmNddr9LnbXSvXbVELpmFMmfFvtRxD7I/5+5GlkMlncApeuRFj+mY6C9syOwQip1a0Y+TIbyiA==
   dependencies:
-    "@azure/msal-common" "16.9.0"
+    "@azure/msal-common" "16.10.0"
 
-"@azure/msal-common@16.9.0":
-  version "16.9.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-16.9.0.tgz#0222b099615ebc70bc61892ee1232341c086fcc6"
-  integrity sha512-1MWGjqgUCRAYgLmVFZKp7fs3Rg1TFvIMgywY8ze2olNVvLlJoRThuoziWSDJuwwyJI5L4rnLb9Tyt5D9GvSLPw==
+"@azure/msal-common@16.10.0":
+  version "16.10.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-16.10.0.tgz#b270d164019e7c8d80692e9ceceecff003e6c1dc"
+  integrity sha512-iYtjpanlv6963Jprs0MvzIap07V+QhultjQctfbEDQCflsDAEeO3R7XnVA5gk30fhoBFLdgJT7VqO0TGsEsN9w==
 
 "@azure/msal-react@^5":
   version "5.4.5"
