@@ -265,10 +265,10 @@
     "@ibm/telemetry-js" "^1.5.0"
     prop-types "^15.8.1"
 
-"@carbon/pictograms@^12.75":
-  version "12.78.0"
-  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.78.0.tgz#3f7c62a82106682857bb816577e358574f62f972"
-  integrity sha512-zKxOjgFDe0mN4b5XuH2WVkryHGT24ZsUQeEpQZbwAcgROnTFEkdyCQHoEQl8e/mI/FGIXK5z4rXLtkqU1xhNjA==
+"@carbon/pictograms@^12.79":
+  version "12.79.0"
+  resolved "https://registry.yarnpkg.com/@carbon/pictograms/-/pictograms-12.79.0.tgz#c650e4cb0aee0cf42b7174f8fc6596167085112c"
+  integrity sha512-KS5WDQpkuYy0YYeSXkwYUfbXRxd7zvO4YcPJu+DtucK0xB5erafvG3+MwPxIfertPAyV2mqbc7AfmBUeTNNJQA==
   dependencies:
     "@ibm/telemetry-js" "^1.5.0"
 
